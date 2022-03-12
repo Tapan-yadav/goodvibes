@@ -26,7 +26,7 @@ SECRET_KEY = 'tapanyadav'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['goodvibesexhibitions.herokuapp.com']
+ALLOWED_HOSTS = ['goodvibesexhibitions.herokuapp.com','localhost']
 
 
 # Application definition

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      margin :0;
+      padding : 0;
+
+    }
+    .header{
+      background : rgba(0,0,100.0.4);
+      height : 100vh;
+
+    }
+    .video-background{
+      position: absolute;
+      right : 0;
+      bottom : 0;
+      min-width : 100%;
+      min-height : 100%;
+      width : 100px;
+      height : 100px;
+      z-index : -1;
+
+    }
+    @media(min-aspect-ratio:16/9)
+    {
+      .video-background{
+        width : auto;
+        height: 100%;
+      }
+    }
+    .logo{
+      margin : 25px;
+      height : 40px;
+    }
+    .welcome-msg{
+      position:relative;
+      text-align: center;
+      font-family: monospace;
+      color : #fff;
+      top : 150px;
+      float: right;
+
+    }
+    .welcome-msg h1{
+      font-size : 80px;
+      font-weight : 100;
+      letter-spacing: 5px;
+      margin-bottom: 30px;
+    }
+    .btn{
+      text-align: center;
+      font-size : 18px;
+      color : #fff;
+      margin: 5px;
+      padding : 7px 22px;
+      text-decoration: none;
+      border : 1px solid coral;
+      border-radius : 25px;
+    }
+    .btn-register{
+      text-align: center;
+      background: coral;
+    }
+    .btn-contact:hover{
+      text-align: center;
+      background : coral;
+      transition : .5s;
+    }
+  </style>
+</head>
+<body>
+  <section class = "header">
+    <video autoplay loop class = "video-background" muted plays-inline>
+      <source src = "static/vd5.mp4" type = "video/mp4">
+    </video>
+
+    <img src = "static/logo.png" class = "logo">
+    <div class = "Welcome-msg">
+      <h1>Fashion FX Expo</h1>
+      <a href = "events" class = "btn btn-register">Register-Event</a>
+      <a href = "contact" class = "btn btn-contact">Contact_us</a>
+
+
+    </div>
+
+  </section>
+
+</body>
+</html>
